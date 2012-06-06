@@ -665,9 +665,7 @@ end
 
 ### Loop
 
-Elixir provides a convenient construct for loops which Erlang does not have. In
-general, it is better to use one of the function provided by the ``Enum`` module
-or a list comprehension.
+Elixir provides a convenient construct for loops which Erlang does not have. However, in general it is better to use one of the function provided by the ``Enum`` module or a list comprehension.
 
 {% highlight ruby %}
 loop [1, 2, 3, 4, 5], [] do
@@ -681,7 +679,7 @@ end
 Enum.map [1, 2, 3, 4, 5], &1 * &1
 #=> [1, 4, 9, 16, 25]
 
-lc x in [1, 2, 3, 4, 5], do: x * x
+lc x inlist [1, 2, 3, 4, 5], do: x * x
 #=> [1, 4, 9, 16, 25]
 {% endhighlight %}
 
